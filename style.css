@@ -30,6 +30,7 @@ body {
     max-width: 450px;
     margin: 0 auto;
     background-color:#484FB7;
+    color:#ffffff;
 }
 
 h1, h2 {
@@ -50,24 +51,52 @@ nav {
     padding: 10px 20px;
     margin: 20px auto;
     background-color:#E9BB57;
+    color:#484FB7;
+    font-weight: bold;
+}
+
+nav h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    color: #000000;
+    font-size: 1.4em;
+    margin-bottom: 10px;
 }
 
 nav ul {
-    background-color: #ffffff;
-    color: #6B8FE7;
     list-style-type: none;
-    Display: inline-block;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 0;
+    width: 100%;
 }
 
 nav ul li {
-    margin: 0 10px;
-    padding: 10px 0;
+    margin: 0;
+    padding: 12px 14px;
     background-color: #ffffff;
-    color:#484FB7;
+    color: #484FB7;
+    border-radius: 8px;
+    border-corner-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;   
+}
+
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -77,31 +106,146 @@ h2 {
 h3 {
     font-size: 1.5em;
     color:#E9BB57;
-    text-align: left;
+    margin: 10px 0;
+
+    
 }
 
 h4 {
     font-size:1.15em;
+   
+    color:#484FB7;
+}
+
+p {
     text-align: left;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    align-self: flex-start;
 }
 
 section {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 10px;
-    margin: 20px 0;
+    align-items: flex-start;
+    padding: 10px 20px;
+    margin: 15px 0;
     border-radius: 10px;
+    background-color:#ffffff;
+    color:#1E1E1E;
+    text-align: left;
 }
 
-.Us, .Schedule {  
-    padding: 20px 10px;
-    margin: 20px 0;
-    border-radius: 10px;
+section#Pricing h3 {
+    align-self: flex-start;
+    width: 100%;
+}
+
+section#Schedule {
+    flex:2;
+    background-color: #D9526F;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+section#Schedule h2,
+section#Schedule h3,
+section#Schedule p {
+    color: #ffffff;
+}
+
+section#Schedule p {
+    margin-bottom: 5px;
+}
+
+/*SCHEDULE NOW BUTTON */
+section#Schedule a {
+    display: block;
+    width: 240%;
+    margin: 15px auto 0;                   
+    text-align: center;
+    background-color: #ffffff;
+    color: #1E1E1E;
     text-decoration: none;
-    font-weight: bold;
-     background-color:#D9526F;
+    font-weight: bolder;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;     
+}
+
+section#Us {
+    background-color: #D9526F;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+section#Us h2 {
+    margin-bottom: 14px;
+}
+
+section#Us ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+section#Us li:nth-child(1) {
+    background-color: #4CA7C0;
+    color: #1E1E1E;
+}
+
+section#Us li:nth-child(2) {
+    background-color: #6B8FE7;
+    color: #1E1E1E;
+}
+
+section#Us li:nth-child(3) {
+    background-color: #E9BB57;
+    color: #1E1E1E;
+}
+
+section#Us li:nth-child(4) {
+    background-color: #ffffff;
+    color: #1E1E1E;
+}
+
+section#Us li {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+section#Pricing h2 {
+    color: #ffffff;
+    text-align: left;
+}
+
+section#Pricing {
+    background-color: #484FB7;
+    justify-content: center;
+    
+}
+
+
+
+table {
+    background-color:#e9bb57;
+    margin: 0 auto;
 }
 
 th, td {
@@ -118,4 +262,11 @@ th {
 
 td {
     background-color:#ffffff
+}
+
+footer {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
 }
