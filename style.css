@@ -1,12 +1,29 @@
 /* CSS BY Jessica Seapno */
 
 /*IMPORTED FONTS */
-body {
-    font-family: Roboto;
-}
+@import url('https://googleapis.com');
 
 /* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* ROOT VARIABLES */
 
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
 /* GLOBAL STYLES (mobile first/small)*/
+
+body {
+    font-family: monospace;
+    color:#4CAF50;
+    max-width: 450px;
+    margin: 0 auto;
+}
