@@ -5,7 +5,6 @@
 
 /* CSS RESET */
 *, *::before, *::after {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -26,14 +25,16 @@
 /* GLOBAL STYLES (mobile first/small)*/
 
 body {
+    display: block;
     font-family: 'Inter', sans-serif;
-    color:#4CAF50;
     max-width: 450px;
     margin: 0 auto;
+    background-color:#484FB7;
 }
 
 h1, h2 {
     font-family: 'Kavoon', cursive;
+    color:#ffffff    
 }
 
 h1 {
@@ -44,14 +45,77 @@ NAV h2 {
     font-size: 1.5em;
 }
 
+nav {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color:#E9BB57;
+}
+
+nav ul {
+    background-color: #ffffff;
+    color: #6B8FE7;
+    list-style-type: none;
+    Display: inline-block;
+    text-align:center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    color:#484FB7;
+}
+
 h2 {
     font-size: 2em;
 }
 
 h3 {
     font-size: 1.5em;
+    color:#E9BB57;
+    text-align: left;
 }
 
 h4 {
     font-size:1.15em;
+    text-align: left;
+}
+
+section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.Us, .Schedule {  
+    padding: 20px 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+     background-color:#D9526F;
+}
+
+th, td {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color:#E9BB57;
+}
+
+th {
+    background-color:#E9BB57;
+    font-weight: bold;
+}
+
+td {
+    background-color:#ffffff
 }
